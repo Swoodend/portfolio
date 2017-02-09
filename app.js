@@ -8,7 +8,9 @@ const index = require('./lib/routes/index.js');
 
 
 app.set('view engine', 'pug');
-app.set('views', path.join(__dirname + 'lib/views'));
+app.set('views', path.join(__dirname + '/lib/public/views'));
+
+app.use(express.static(path.join(__dirname, '/lib/public')));
 
 
 app.use('/', index);
