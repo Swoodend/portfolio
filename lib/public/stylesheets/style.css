@@ -1,5 +1,5 @@
-.carousel-item{
-	width: 650px !important;
+.carousel-item {
+	width: 600px !important;
 	height: 400px !important;
 }
 
@@ -54,6 +54,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 500px;
+	background: #F3F4F8;
 	margin-top: 70px;
 }
 
