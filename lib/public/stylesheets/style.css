@@ -1,3 +1,8 @@
+.carousel-item{
+	width: 650px !important;
+	height: 400px !important;
+}
+
 .main-header {
 	display: flex;
 	justify-content: space-between;
@@ -48,9 +53,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #F3F4F8;
 	height: 500px;
 	margin-top: 70px;
+}
+
+.carousel.initialized { /*overwrite Materialize defaults*/
+	height: 500px;
+	background: #F3F4F8;
 }
 
 #project-picture {
