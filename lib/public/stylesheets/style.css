@@ -16,7 +16,6 @@
 	display: flex;
 	align-items: center;
 	color: #ABABAC;
-	line-height: 150px;
 	margin-left: 75px;
 }
 
@@ -38,9 +37,11 @@
 .nav-options a {
 	text-decoration: none;
 	color: #99999A;
-	margin-top: 18px;
 }
 
+.userView p {
+	color: #b2b5bb;
+}
 .title-box {
 	margin-left: 75px;
 }
@@ -70,8 +71,25 @@
 	border-radius: 2px;
 }
 
+
 .about-me {
 	margin-left: 75px;
 	height: 250px;
+	color: #b2b5bb;
+	width: 33%;
 }
 
+.big {
+	color: black;
+	font-size: 16px;
+}
+
+.bump-up {
+	position: relative;
+	bottom: 17px;
+}
+
+.no-style {
+	text-decoration: none;
+	color: black;
+}
