@@ -14,15 +14,32 @@ html
 			div(class="name-link")
 				a(href="/") Scott Woodend
 			div(class="nav-options")
-				a(href="#"): i(class="material-icons") view_carousel
-				a(href="#"): i(class="material-icons") reorder
-				a(href="#"): i(class="material-icons") toc
+				a(href="#carousel"): i(class="material-icons") view_carousel
+				a(href="#about"): i(class="material-icons") reorder
+				ul#slide-out.side-nav
+					li
+						.userView
+							p.big Projects
+					li: a.waves-effect(href='/projects/twitch_viewer') twitch viewer
+					li: a.waves-effect(href='/projects/wiki_view') wiki view
+					li: a.waves-effect(href='/projects/simon') simon
+					li: a.waves-effect(href='/projects/tic_tac_toe') tic tac toe
+					li: a.waves-effect(href='/projects/pomodoro') pomodoro
+					li: a.waves-effect(href='/projects/asteroids_ai') asteroids ai
+					li: a.waves-effect(href='/projects/ween_scraper') ween scraper
+					li: a.waves-effect(href='/projects/automate_daily_reports') automate daily reports
+
+				
+				a.button-collapse(href='#', data-activates='slide-out')
+					i.material-icons toc
+
+
 
 		div(class="main-title")
 		div(class="title-box")
 			h1 Recent Work.
 
-		div.carousel
+		div#carousel.carousel
 				a(href="/projects/twitch_viewer").carousel-item: img(src="http://res.cloudinary.com/ddbeeuyr4/image/upload/v1486764480/twitch_viewer_nb_neyobf.png")
 				a(href="/projects/wiki_view").carousel-item: img(src="http://res.cloudinary.com/ddbeeuyr4/image/upload/v1486764480/wiki_view_nb_si5smv.png")
 				a(href="/projects/simon").carousel-item: img(src="http://res.cloudinary.com/ddbeeuyr4/image/upload/v1486764480/simon_nb_yoqoh1.png")
@@ -32,4 +49,10 @@ html
 				a(href="/projects/ween_scraper").carousel-item: img(src="http://res.cloudinary.com/ddbeeuyr4/image/upload/v1486764480/generic_code_nb_e3pil6.png")
 				a(href="/projects/automate_daily_reports").carousel-item: img(src="http://res.cloudinary.com/ddbeeuyr4/image/upload/v1486764480/generic_code_nb_e3pil6.png")
 
-		div(class="about-me")
+		div(id="about" class="about-me")
+			p.big About me
+
+			p Hi there. My name is Scott Woodend. I'm an aspiring full stack developer. I enjoy the learning process and remain eager and comitted to learning how to code. I work mostly with Node. My next goal is to learn react. When I'm not coding I like Brazillian Jiu-Jitsu and guitar.
+
+			a(href="http://www.github.com/Swoodend"): p(class="no-style") gh: Swoodend
+			a(href="mailto:woodendscott@gmail.com"): p(class="no-style bump-up") e: woodendscott
