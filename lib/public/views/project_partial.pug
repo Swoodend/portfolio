@@ -1,0 +1,47 @@
+html
+  head
+    title Scott Woodend
+    link(rel="stylesheet" type="text/css" href="/stylesheets/style.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js")
+    script(type="text/javascript" src="/scripts/script.js")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+  body
+
+    div(class="main-header")
+      div(class="name-link")
+        a(href="/") Scott Woodend
+      div(class="nav-options")
+        a(href="#pshow"): i(class="material-icons") view_carousel
+        a(href="#about"): i(class="material-icons") reorder
+        ul#slide-out.side-nav
+          li
+            .userView
+              p.big Projects
+          li: a.waves-effect(href='/projects/twitch_viewer') twitch viewer
+          li: a.waves-effect(href='/projects/wiki_view') wiki view
+          li: a.waves-effect(href='/projects/simon') simon
+          li: a.waves-effect(href='/projects/tic_tac_toe') tic tac toe
+          li: a.waves-effect(href='/projects/pomodoro') pomodoro
+          li: a.waves-effect(href='/projects/asteroids_ai') asteroids ai
+          li: a.waves-effect(href='/projects/ween_scraper') ween scraper
+          li: a.waves-effect(href='/projects/automate_daily_reports') automate daily reports
+
+        
+        a.button-collapse(href='#', data-activates='slide-out')
+          i.material-icons toc
+
+
+
+    div(class="main-title")
+    div(class="title-box")
+      h1= project.title
+
+    div(id="pshow" class="project-showcase")
+      a(href=project.link): img(src=project.img)
+
+    div(id="about" class="about-me")
+      p.big #{project.title}
+      p.project-description #{project.desc}
+      p.stack-description #{project.stack}
