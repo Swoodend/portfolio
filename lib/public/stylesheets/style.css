@@ -1,5 +1,42 @@
-.carousel-item {
-	width: 600px !important;
+@media screen and (max-width: 600px){
+
+	p {
+		font-size: 24px !important;
+	}
+
+	.big {
+		font-size: 32px !important;
+	}
+	
+	.about-me {
+		width: 100% !important; 
+		text-align: center;
+		margin: 0 !important;
+		font-size: 32px !important;
+	}
+
+	.name-link{
+		margin-left: 20px; /* */
+	}
+	
+	.nav-options {
+		margin-right: 20px; /* */
+	}
+	
+	.title-box {
+		text-align: center;
+		margin-right: 70px;
+	}
+
+	.project-showcase img{
+		height: 350px;
+		width: 350px;
+	}
+
+}
+
+.carousel-item { /* overwrite materialize defaults*/
+	width: 600px !important; 
 	height: 400px !important;
 }
 
