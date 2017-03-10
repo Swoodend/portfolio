@@ -13,6 +13,9 @@ const pomodoro = require('./lib/routes/pomodoro');
 const asteroidsAi = require('./lib/routes/asteroids_ai');
 const ween = require('./lib/routes/ween_scraper');
 const daily = require('./lib/routes/daily');
+const gameOfLife = require('./lib/routes/game_of_life');
+const recipeCards = require('./lib/routes/recipe_cards');
+const fccLeaderBoard = require('./lib/routes/fcc_leaderboard');
 
 
 app.set('view engine', 'pug');
@@ -30,6 +33,9 @@ app.use('/projects/pomodoro', pomodoro);
 app.use('/projects/asteroids_ai', asteroidsAi);
 app.use('/projects/ween_scraper', ween);
 app.use('/projects/automate_daily_reports', daily);
+app.use('/projects/game_of_life', gameOfLife);
+app.use('/projects/recipe_cards', recipeCards);
+app.use('/projects/fcc_leaderboard', fccLeaderBoard);
 
 
 
